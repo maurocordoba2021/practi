@@ -1,0 +1,374 @@
+*{
+ margin: 0px;
+padding: 0px;
+box-sizing: border-box;
+}
+
+header{
+    background-color:yellow;
+    
+}
+header div.logo{    
+       padding: 10px;
+       width: 40%;
+       display: flex;
+}
+
+header div.log img{
+    width: 50%;
+}
+
+
+header ul li a{
+    text-decoration: none;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #dbdbdb;
+    
+}
+
+p{
+    font-size: 12px;
+}
+
+article{
+    margin: 10px;
+}
+nav{
+    padding: 8px;
+}
+
+
+.compra{
+    text-align: center;
+    margin: 4px 0px;
+}
+
+.titulo-seccion{
+    font-size: 24px;
+    text-align: center;
+    color:#646464;
+}
+
+.price{
+    font-size: 18px;
+    width: 50%;
+}
+.discount{
+    font-size: 16px;
+    color: green;
+    width: 35%;
+    padding:0px 0.5px;
+}
+
+.description{
+    font-size: 16px;
+}
+
+.espacio{
+    height: 10px;
+}
+
+.burger-menu button{
+    width: 30px;
+    height: 30px;
+    background-color: blue;
+    color: white;
+    border-radius: 10px;
+    
+}
+
+.burger-menu{
+    text-align: center;
+}
+
+.icono{
+    font-size: 2em;
+    color: blue;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.T-footer{
+    text-align: center;
+}
+
+.tf{
+    text-align: center;
+}
+
+main section{
+    width: 90%;
+    margin: 10px auto;
+}
+
+.banner{
+    width: 100%;
+}
+
+.banner img{
+    width: 100%;
+}
+
+article img{
+    width: 100%;
+}
+
+.fas.fa-truck{
+    color: green;
+    transition: transform 2s
+    
+}
+.fas.fa-truck:hover{
+    transform:rotateZ(-90deg) 
+}
+
+
+
+main section article i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+    }
+
+.articulo{
+   box-sizing: border-box;
+   padding: 0px 15px;
+   position: relative;
+   background-color: white;
+   display: flex;
+   flex-wrap: wrap;
+    
+}
+
+
+
+article .articulo{
+    border-top: solid 1px  #ebebeb ;   
+}
+
+
+
+article{
+    background-color: white;
+}
+
+ /* con el screen solo de aplica el mediacueri a la patalla */
+@media screen and (min-width:768px) and (max-width:1023px){
+    article{box-shadow: 0px 0px 10px rgb(100, 100, 100)
+    }
+
+    .burger-menu{
+        display: none;
+     }
+     .productos{
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: space-between;
+     }
+
+     article{
+         width: 47%;
+         margin: 5px;
+     }
+}
+    
+   
+   @media screen and (min-width:769px){
+      article{box-shadow: 0px 0px 10px rgb(100, 100, 100);}
+      .burger-menu{
+          display: none;
+      }
+      .productos{
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-around;
+      }
+      
+      article{
+          width: 23%;
+          margin: 5px;
+      }
+   }
+   @media screen and (max-width:425px){
+       .des{
+           display: none;
+       }
+       nav{
+           display: none;
+       }
+
+       div.n-var{
+           display:none;
+       }
+
+       p.compra{
+           display: block;
+       }
+
+       div.header{
+           flex-wrap: wrap;
+       }
+
+       div.logo{
+           width: 50%;
+       }
+
+       div.barra-busqueda{
+           width: 50%;
+       }
+
+    
+   }
+
+.description{
+      display: none;
+      
+  }
+
+.articulo:hover .description{
+    display:block;
+    
+}
+
+.articulo:hover{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100)
+}
+
+div.header{
+    display: flex;
+    justify-content: center;
+    
+}
+
+div.barra-busqueda{
+    display: flex;
+    align-items: center;
+    width: 45%;
+    
+}
+
+.barra-busqueda input{
+    width: 100%;
+    border-radius: 4px;
+}
+
+div.compra{
+    display: flex;
+    padding-left: 20px;
+    align-items: center;
+    
+}
+
+.fa.fa-search{
+    border-radius: 4px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul.lista{
+    display: flex;
+}
+
+nav ul.lista li{
+    margin: 0px 4px;
+    padding: 4px;
+}
+
+form{
+    background-color: #c9c9c9;
+    width: 100%;
+    
+}
+
+
+ div.inputs-1 {
+    display: flex;
+    justify-content: center;
+    margin: 5px 0px;
+    flex-wrap: wrap;
+
+}
+.inputs-1 input{  
+    margin: 5px 0px;
+    width: 60%;
+    border-radius: 5px;
+}
+
+div.Perfil{
+    display: flex;
+    justify-content: center;
+}
+
+div.Perfil label{
+    margin: 0px 15px;
+}
+
+div.inputs-2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.inputs-2 label{
+    width: 60%;
+    text-align: center;
+}
+
+.inputs-2 input{
+    width: 60%;
+    margin: 5px 0px;
+    border-radius: 5px;
+}
+
+form h4 {
+    text-align: center;
+}
+
+div.intereses{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+}
+
+.intereses div{
+    display: flex;
+    width: 60%;
+    
+}
+
+div.inputs-3{
+    display: flex;
+    justify-content: center;
+    margin: 5px 0px;
+}
+
+.inputs-3 input{
+    border-radius: 5px;
+}
+
+div.inputs-4{
+    text-align: center;
+}
+.inputs-4 input{
+    border-radius: 5px;
+}
+
+div.inputs-5{
+    text-align: center;
+}
+
+
+
